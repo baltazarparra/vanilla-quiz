@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vanilla Quiz</title>
+    <link rel="stylesheet" href="milligram.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="column">
+                <h1>Vanilla Quiz</h1>
+                <h3>Score: <span data-js="points">0</span></h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <main data-js="quiz">
+
+                    <h4 data-js="question"></h4>
+                    <label>
+                        <input type="radio" name="options">
+                        <p data-js="label"></p>
+                    </label>
+                    <label>
+                        <input type="radio" name="options">
+                        <p data-js="label"></p>
+                    </label>
+                    <label>
+                        <input type="radio" name="options">
+                        <p data-js="label"></p>
+                    </label>
+                    <label>
+                        <input type="radio" name="options">
+                        <p data-js="label"></p>
+                    </label>
+
+                    <button class="button button-outline" type="button" name="button" data-js="nextBtn">Next</button>
+                </main>
+            </div>
+        </div>
+        <button class="button" type="button" name="button" data-js="startBtn">Start</button>
+    </div>
+<script src="main.js"></script>
+</body>
+</html>
